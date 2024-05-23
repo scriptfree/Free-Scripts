@@ -1,0 +1,1 @@
+local fl = true; local fc = true; function increaseX(x: String) game:GetService("ReplicatedStorage")["Functions"]["Multiplier"]:InvokeServer(x, 0.9) end task.spawn(function() repeat task.wait() if fl then increaseX("LuckMultiplier") end if fc then increaseX("ChestSpeedMultiplier") end until (nil) end)
